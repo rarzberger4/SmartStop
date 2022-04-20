@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.*;
+import java.net.URL;
+
 
 @SpringBootApplication
 @RestController
@@ -55,11 +58,16 @@ public class WienerLinien {
 
             output = title + "   --->  Departure in " + depTimes[0] + ", " + depTimes[1] + ", " + depTimes[2];
 
+/*
+            InputStream input = new URL("http://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-haltepunkte.csv").openStream();
+                Reader inputreader = new InputStreamReader(input);
 
 
 
-
-
+                BufferedReader br = new BufferedReader(inputreader);
+                String line = br.readLine();
+                br.close();
+                output = line;*/
         };
     }
 
