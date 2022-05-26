@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'DIGITAL';
+  src: url('https://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');
+}
+
+/* Title */
+.display-1{
+  text-align: center;
+}
+h1 {
+  color: #ffc125;
+}
+
+nav {
+  background: #444c44;
+}
+
+/* Build the Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  padding: 30px;
+}
+
+p{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.dropdown{
+  background: #46562e;
+
+  /* Round corners */
+  border: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  /* Grid-Place: */
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.calender{
+  background: black;
+  /* Round corners */
+  border: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  /* Grid-Place: */
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.digital-clock { /*for digital clock */
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 60px;
+  color: #ffffff;
+  border: 2px solid #999;
+  border-radius: 4px;
+  text-align: center;
+  font: 50px/60px 'DIGITAL', Helvetica;
+  background: linear-gradient(90deg, #000, #555);
+
+  /* Grid-Place: */
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.Maps {
+
+  background: black;
+
+  /* Round corners */
+  border: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  /* Grid-Place: */
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.weather{
+  background: #46562e;
+
+  /* Round corners */
+  border: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  /* Grid-Place: */
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.footer{
+  text-align: center;
+  font-size: small;
+
+  /* Grid */
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+}
+
+
